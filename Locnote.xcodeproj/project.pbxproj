@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C771A201DB757F9000C9CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771A1F1DB757F9000C9CD6 /* AppDelegate.swift */; };
+		4C771A251DB757F9000C9CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C771A231DB757F9000C9CD6 /* Main.storyboard */; };
+		4C771A281DB757F9000C9CD6 /* Locnote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C771A261DB757F9000C9CD6 /* Locnote.xcdatamodeld */; };
+		4C771A2A1DB757F9000C9CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C771A291DB757F9000C9CD6 /* Assets.xcassets */; };
+		4C771A381DB757F9000C9CD6 /* LocnoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771A371DB757F9000C9CD6 /* LocnoteTests.swift */; };
+		4C771A431DB757F9000C9CD6 /* LocnoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771A421DB757F9000C9CD6 /* LocnoteUITests.swift */; };
+		4C771A511DB8E7DC000C9CD6 /* SignInToContinueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771A501DB8E7DC000C9CD6 /* SignInToContinueViewController.swift */; };
+		6181A4C5E25AF3C36BE7D810 /* Pods_LocnoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0307605886FD2A6B6F66A2AB /* Pods_LocnoteTests.framework */; };
+		7DCA0883CF12B7F8A4A323A3 /* Pods_Locnote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BA998AB74E9A9CCB7B81B4 /* Pods_Locnote.framework */; };
+		99150F9B6D193EC35873DD09 /* Pods_LocnoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DF12F65100CD6A06AE5254 /* Pods_LocnoteUITests.framework */; };
+		A81AFB501E53826A00C15B5F /* CoreDataCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AFB4F1E53826A00C15B5F /* CoreDataCollectionViewModel.swift */; };
+		A81AFB521E539AF500C15B5F /* ComplitedNotificationCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AFB511E539AF500C15B5F /* ComplitedNotificationCollectionViewModel.swift */; };
+		A81AFB541E539BB600C15B5F /* CurrentNotificationCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AFB531E539BB600C15B5F /* CurrentNotificationCollectionViewModel.swift */; };
+		A81AFB561E53B98700C15B5F /* CurrentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AFB551E53B98700C15B5F /* CurrentCollectionViewCell.swift */; };
+		A820533E1E34B68600B6154F /* PhotosCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820533D1E34B68600B6154F /* PhotosCollectionViewModel.swift */; };
+		A82053401E34BDA900B6154F /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820533F1E34BDA900B6154F /* PhotosCollectionViewCell.swift */; };
+		A82D1C1D1E81877B00EAAFEA /* CellForComplitedNotificationsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1C1C1E81877B00EAAFEA /* CellForComplitedNotificationsCollection.swift */; };
+		A834308B1DF046FB00CC4541 /* SendToContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A834308A1DF046FB00CC4541 /* SendToContactTableViewController.swift */; };
+		A834308D1DF0475C00CC4541 /* SendToMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A834308C1DF0475C00CC4541 /* SendToMeTableViewController.swift */; };
+		A83430901DF05AF600CC4541 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A834308F1DF05AF600CC4541 /* MapKit.framework */; };
+		A83430921DF05FD000CC4541 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83430911DF05FD000CC4541 /* ContactsTableViewController.swift */; };
+		A835B9091E39074A00140FF1 /* AudioMessageTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835B9081E39074A00140FF1 /* AudioMessageTableViewModel.swift */; };
+		A84206AC1E7ADE9900982166 /* LocationManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84206AB1E7ADE9900982166 /* LocationManagerSingleton.swift */; };
+		A8524D8E1DF2F6E3008AFDD1 /* MessageTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8524D8D1DF2F6E3008AFDD1 /* MessageTextViewController.swift */; };
+		A8524D951DF417FE008AFDD1 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8524D931DF417FE008AFDD1 /* Contacts.framework */; };
+		A8524D961DF417FE008AFDD1 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8524D941DF417FE008AFDD1 /* ContactsUI.framework */; };
+		A8678FBD1E3C0C540038915B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8678FBC1E3C0C540038915B /* AudioToolbox.framework */; };
+		A8678FC01E3F4D630038915B /* begin_record.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8678FBE1E3F4D630038915B /* begin_record.mp3 */; };
+		A8678FC11E3F4D630038915B /* end_record.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8678FBF1E3F4D630038915B /* end_record.mp3 */; };
+		A8727E221E1AB7B5008DAFFC /* GreatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8727E211E1AB7B5008DAFFC /* GreatingViewController.swift */; };
+		A8727E241E1ABE84008DAFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8727E231E1ABE84008DAFFC /* LaunchScreen.storyboard */; };
+		A87624941DFCAC5500AE2E80 /* ContactsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87624931DFCAC5500AE2E80 /* ContactsClass.swift */; };
+		A87624961DFEC5E900AE2E80 /* SectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87624951DFEC5E900AE2E80 /* SectionClass.swift */; };
+		A89D64101DEDA13A0023BAC7 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D640F1DEDA13A0023BAC7 /* SettingsTableViewController.swift */; };
+		A8A0B50B1E00690200A2B332 /* GeoPositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0B50A1E00690200A2B332 /* GeoPositionViewController.swift */; };
+		A8AAABEE1E11135C00C6FFFB /* GeopositionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AAABED1E11135C00C6FFFB /* GeopositionClass.swift */; };
+		A8B1F11A1DED81F200802CB8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1F1191DED81F200802CB8 /* MainTableViewController.swift */; };
+		A8B77E971E03DB4300715FDF /* PlaceMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B77E961E03DB4300715FDF /* PlaceMark.swift */; };
+		A8BA598B1E3902F50077540E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA598A1E3902F50077540E /* AVFoundation.framework */; };
+		A8BA598D1E3903F00077540E /* AudioMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA598C1E3903F00077540E /* AudioMessageTableViewCell.swift */; };
+		A8BD28931E2CE867007277E8 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD28921E2CE867007277E8 /* AuthorizationViewController.swift */; };
+		A8C12B781E32AA20004E8CBB /* ContactsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C12B771E32AA1F004E8CBB /* ContactsTableViewModel.swift */; };
+		A8D3243E1E26EEC800CEF7A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D3243D1E26EEC800CEF7A4 /* GoogleService-Info.plist */; };
+		A8D3243F1E26EEC800CEF7A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D3243D1E26EEC800CEF7A4 /* GoogleService-Info.plist */; };
+		A8D324401E26EEC800CEF7A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D3243D1E26EEC800CEF7A4 /* GoogleService-Info.plist */; };
+		A8EABA101DF5D67900E1DBB0 /* ContactEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EABA0B1DF5D67900E1DBB0 /* ContactEntry.swift */; };
+		A8EABA111DF5D67900E1DBB0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EABA0C1DF5D67900E1DBB0 /* String+Extensions.swift */; };
+		A8EABA171DF5D7DB00E1DBB0 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EABA151DF5D7DB00E1DBB0 /* ContactTableViewCell.swift */; };
+		A8EE84BD1E0A7F8F009BB1A2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EE84BC1E0A7F8F009BB1A2 /* CoreLocation.framework */; };
+		A8F72DCA1E1D13D3004079B6 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F72DC91E1D13D3004079B6 /* UITextView+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C771A341DB757F9000C9CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C771A141DB757F9000C9CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C771A1B1DB757F9000C9CD6;
+			remoteInfo = Locnote;
+		};
+		4C771A3F1DB757F9000C9CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C771A141DB757F9000C9CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C771A1B1DB757F9000C9CD6;
+			remoteInfo = Locnote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0307605886FD2A6B6F66A2AB /* Pods_LocnoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocnoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		083BC23C517D770575FA8672 /* Pods-LocnoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocnoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocnoteTests/Pods-LocnoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33BA998AB74E9A9CCB7B81B4 /* Pods_Locnote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Locnote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C771A1C1DB757F9000C9CD6 /* Locnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C771A1F1DB757F9000C9CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C771A241DB757F9000C9CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C771A271DB757F9000C9CD6 /* Locnote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Locnote.xcdatamodel; sourceTree = "<group>"; };
+		4C771A291DB757F9000C9CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C771A2E1DB757F9000C9CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C771A331DB757F9000C9CD6 /* LocnoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocnoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C771A371DB757F9000C9CD6 /* LocnoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocnoteTests.swift; sourceTree = "<group>"; };
+		4C771A391DB757F9000C9CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C771A3E1DB757F9000C9CD6 /* LocnoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocnoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C771A421DB757F9000C9CD6 /* LocnoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocnoteUITests.swift; sourceTree = "<group>"; };
+		4C771A441DB757F9000C9CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C771A501DB8E7DC000C9CD6 /* SignInToContinueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInToContinueViewController.swift; sourceTree = "<group>"; };
+		5620C9904952D4D3D3891B95 /* Pods-Locnote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locnote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locnote/Pods-Locnote.release.xcconfig"; sourceTree = "<group>"; };
+		57DF12F65100CD6A06AE5254 /* Pods_LocnoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocnoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC138BB347398671F00BCE0 /* Pods-LocnoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocnoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocnoteUITests/Pods-LocnoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		733FF855FB486F1E050D5B1A /* Pods-LocnoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocnoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocnoteUITests/Pods-LocnoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B60B6DD043B63DFEE3FE71F /* Pods-Locnote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locnote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Locnote/Pods-Locnote.debug.xcconfig"; sourceTree = "<group>"; };
+		9FAED07733E109F0CCF8517A /* Pods-LocnoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocnoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocnoteTests/Pods-LocnoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		A81AFB4F1E53826A00C15B5F /* CoreDataCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataCollectionViewModel.swift; sourceTree = "<group>"; };
+		A81AFB511E539AF500C15B5F /* ComplitedNotificationCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplitedNotificationCollectionViewModel.swift; sourceTree = "<group>"; };
+		A81AFB531E539BB600C15B5F /* CurrentNotificationCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentNotificationCollectionViewModel.swift; sourceTree = "<group>"; };
+		A81AFB551E53B98700C15B5F /* CurrentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentCollectionViewCell.swift; sourceTree = "<group>"; };
+		A820533D1E34B68600B6154F /* PhotosCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewModel.swift; sourceTree = "<group>"; };
+		A820533F1E34BDA900B6154F /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		A82D1C1C1E81877B00EAAFEA /* CellForComplitedNotificationsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForComplitedNotificationsCollection.swift; sourceTree = "<group>"; };
+		A834308A1DF046FB00CC4541 /* SendToContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendToContactTableViewController.swift; sourceTree = "<group>"; };
+		A834308C1DF0475C00CC4541 /* SendToMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendToMeTableViewController.swift; sourceTree = "<group>"; };
+		A834308F1DF05AF600CC4541 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A83430911DF05FD000CC4541 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		A835B9081E39074A00140FF1 /* AudioMessageTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMessageTableViewModel.swift; sourceTree = "<group>"; };
+		A84206AB1E7ADE9900982166 /* LocationManagerSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerSingleton.swift; sourceTree = "<group>"; };
+		A8524D8D1DF2F6E3008AFDD1 /* MessageTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextViewController.swift; sourceTree = "<group>"; };
+		A8524D8F1DF36DF2008AFDD1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A8524D901DF36DF2008AFDD1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A8524D931DF417FE008AFDD1 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		A8524D941DF417FE008AFDD1 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		A856103D1E9ECCC400EB6A78 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		A856103F1E9ECCC400EB6A78 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		A8678FBC1E3C0C540038915B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A8678FBE1E3F4D630038915B /* begin_record.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = begin_record.mp3; sourceTree = "<group>"; };
+		A8678FBF1E3F4D630038915B /* end_record.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end_record.mp3; sourceTree = "<group>"; };
+		A8727E211E1AB7B5008DAFFC /* GreatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreatingViewController.swift; sourceTree = "<group>"; };
+		A8727E231E1ABE84008DAFFC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A87624931DFCAC5500AE2E80 /* ContactsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsClass.swift; sourceTree = "<group>"; };
+		A87624951DFEC5E900AE2E80 /* SectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionClass.swift; sourceTree = "<group>"; };
+		A89D640F1DEDA13A0023BAC7 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		A8A0B50A1E00690200A2B332 /* GeoPositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPositionViewController.swift; sourceTree = "<group>"; };
+		A8AAABED1E11135C00C6FFFB /* GeopositionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeopositionClass.swift; sourceTree = "<group>"; };
+		A8B1F1191DED81F200802CB8 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		A8B77E961E03DB4300715FDF /* PlaceMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMark.swift; sourceTree = "<group>"; };
+		A8BA598A1E3902F50077540E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A8BA598C1E3903F00077540E /* AudioMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMessageTableViewCell.swift; sourceTree = "<group>"; };
+		A8BD28921E2CE867007277E8 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		A8C12B771E32AA1F004E8CBB /* ContactsTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewModel.swift; sourceTree = "<group>"; };
+		A8CBBF1F1DFAA31600A731F4 /* Locnote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locnote-Bridging-Header.h"; sourceTree = "<group>"; };
+		A8D3243D1E26EEC800CEF7A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8EABA0B1DF5D67900E1DBB0 /* ContactEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEntry.swift; sourceTree = "<group>"; };
+		A8EABA0C1DF5D67900E1DBB0 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		A8EABA151DF5D7DB00E1DBB0 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		A8EE84BC1E0A7F8F009BB1A2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A8F72DC91E1D13D3004079B6 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C771A191DB757F9000C9CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8678FBD1E3C0C540038915B /* AudioToolbox.framework in Frameworks */,
+				A8BA598B1E3902F50077540E /* AVFoundation.framework in Frameworks */,
+				A8EE84BD1E0A7F8F009BB1A2 /* CoreLocation.framework in Frameworks */,
+				A8524D951DF417FE008AFDD1 /* Contacts.framework in Frameworks */,
+				A8524D961DF417FE008AFDD1 /* ContactsUI.framework in Frameworks */,
+				A83430901DF05AF600CC4541 /* MapKit.framework in Frameworks */,
+				7DCA0883CF12B7F8A4A323A3 /* Pods_Locnote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C771A301DB757F9000C9CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6181A4C5E25AF3C36BE7D810 /* Pods_LocnoteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C771A3B1DB757F9000C9CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99150F9B6D193EC35873DD09 /* Pods_LocnoteUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4785C665AB1D91F5C6FACCF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B60B6DD043B63DFEE3FE71F /* Pods-Locnote.debug.xcconfig */,
+				5620C9904952D4D3D3891B95 /* Pods-Locnote.release.xcconfig */,
+				083BC23C517D770575FA8672 /* Pods-LocnoteTests.debug.xcconfig */,
+				9FAED07733E109F0CCF8517A /* Pods-LocnoteTests.release.xcconfig */,
+				733FF855FB486F1E050D5B1A /* Pods-LocnoteUITests.debug.xcconfig */,
+				5FC138BB347398671F00BCE0 /* Pods-LocnoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C771A131DB757F9000C9CD6 = {
+			isa = PBXGroup;
+			children = (
+				4C771A1E1DB757F9000C9CD6 /* Locnote */,
+				4C771A361DB757F9000C9CD6 /* LocnoteTests */,
+				4C771A411DB757F9000C9CD6 /* LocnoteUITests */,
+				4C771A1D1DB757F9000C9CD6 /* Products */,
+				A834308E1DF05AF600CC4541 /* Frameworks */,
+				4785C665AB1D91F5C6FACCF5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4C771A1D1DB757F9000C9CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C771A1C1DB757F9000C9CD6 /* Locnote.app */,
+				4C771A331DB757F9000C9CD6 /* LocnoteTests.xctest */,
+				4C771A3E1DB757F9000C9CD6 /* LocnoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C771A1E1DB757F9000C9CD6 /* Locnote */ = {
+			isa = PBXGroup;
+			children = (
+				4C771A1F1DB757F9000C9CD6 /* AppDelegate.swift */,
+				4C771A231DB757F9000C9CD6 /* Main.storyboard */,
+				A8727E211E1AB7B5008DAFFC /* GreatingViewController.swift */,
+				4C771A501DB8E7DC000C9CD6 /* SignInToContinueViewController.swift */,
+				A8BD28921E2CE867007277E8 /* AuthorizationViewController.swift */,
+				A8B1F1191DED81F200802CB8 /* MainTableViewController.swift */,
+				A89D640F1DEDA13A0023BAC7 /* SettingsTableViewController.swift */,
+				A834308A1DF046FB00CC4541 /* SendToContactTableViewController.swift */,
+				A834308C1DF0475C00CC4541 /* SendToMeTableViewController.swift */,
+				A8C12B771E32AA1F004E8CBB /* ContactsTableViewModel.swift */,
+				A835B9081E39074A00140FF1 /* AudioMessageTableViewModel.swift */,
+				A8BA598C1E3903F00077540E /* AudioMessageTableViewCell.swift */,
+				A820533D1E34B68600B6154F /* PhotosCollectionViewModel.swift */,
+				A820533F1E34BDA900B6154F /* PhotosCollectionViewCell.swift */,
+				A8524D8D1DF2F6E3008AFDD1 /* MessageTextViewController.swift */,
+				A81AFB4F1E53826A00C15B5F /* CoreDataCollectionViewModel.swift */,
+				A81AFB531E539BB600C15B5F /* CurrentNotificationCollectionViewModel.swift */,
+				A81AFB511E539AF500C15B5F /* ComplitedNotificationCollectionViewModel.swift */,
+				A81AFB551E53B98700C15B5F /* CurrentCollectionViewCell.swift */,
+				A82D1C1C1E81877B00EAAFEA /* CellForComplitedNotificationsCollection.swift */,
+				A8B77E951E03DB1900715FDF /* Map */,
+				A8EABA0A1DF5D64A00E1DBB0 /* Contacts */,
+				A84206AA1E7ADD5F00982166 /* Singletones */,
+				A8CBBF1C1DF9F21600A731F4 /* Extensions */,
+				A8727E231E1ABE84008DAFFC /* LaunchScreen.storyboard */,
+				4C771A291DB757F9000C9CD6 /* Assets.xcassets */,
+				4C771A2E1DB757F9000C9CD6 /* Info.plist */,
+				A8D3243D1E26EEC800CEF7A4 /* GoogleService-Info.plist */,
+				4C771A261DB757F9000C9CD6 /* Locnote.xcdatamodeld */,
+				A8CBBF1F1DFAA31600A731F4 /* Locnote-Bridging-Header.h */,
+				A8678FC21E3F4D790038915B /* Sounds */,
+			);
+			path = Locnote;
+			sourceTree = "<group>";
+		};
+		4C771A361DB757F9000C9CD6 /* LocnoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C771A371DB757F9000C9CD6 /* LocnoteTests.swift */,
+				4C771A391DB757F9000C9CD6 /* Info.plist */,
+			);
+			path = LocnoteTests;
+			sourceTree = "<group>";
+		};
+		4C771A411DB757F9000C9CD6 /* LocnoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C771A421DB757F9000C9CD6 /* LocnoteUITests.swift */,
+				4C771A441DB757F9000C9CD6 /* Info.plist */,
+			);
+			path = LocnoteUITests;
+			sourceTree = "<group>";
+		};
+		A834308E1DF05AF600CC4541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8678FBC1E3C0C540038915B /* AudioToolbox.framework */,
+				A8BA598A1E3902F50077540E /* AVFoundation.framework */,
+				A8EE84BC1E0A7F8F009BB1A2 /* CoreLocation.framework */,
+				A8524D931DF417FE008AFDD1 /* Contacts.framework */,
+				A8524D941DF417FE008AFDD1 /* ContactsUI.framework */,
+				A8524D8F1DF36DF2008AFDD1 /* AddressBook.framework */,
+				A8524D901DF36DF2008AFDD1 /* AddressBookUI.framework */,
+				A834308F1DF05AF600CC4541 /* MapKit.framework */,
+				33BA998AB74E9A9CCB7B81B4 /* Pods_Locnote.framework */,
+				0307605886FD2A6B6F66A2AB /* Pods_LocnoteTests.framework */,
+				57DF12F65100CD6A06AE5254 /* Pods_LocnoteUITests.framework */,
+				A856103D1E9ECCC400EB6A78 /* UserNotifications.framework */,
+				A856103F1E9ECCC400EB6A78 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A84206AA1E7ADD5F00982166 /* Singletones */ = {
+			isa = PBXGroup;
+			children = (
+				A84206AB1E7ADE9900982166 /* LocationManagerSingleton.swift */,
+			);
+			name = Singletones;
+			sourceTree = "<group>";
+		};
+		A8678FC21E3F4D790038915B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A8678FBE1E3F4D630038915B /* begin_record.mp3 */,
+				A8678FBF1E3F4D630038915B /* end_record.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		A8B77E951E03DB1900715FDF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0B50A1E00690200A2B332 /* GeoPositionViewController.swift */,
+				A8AAABED1E11135C00C6FFFB /* GeopositionClass.swift */,
+				A8B77E961E03DB4300715FDF /* PlaceMark.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		A8CBBF1C1DF9F21600A731F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8EABA0C1DF5D67900E1DBB0 /* String+Extensions.swift */,
+				A8F72DC91E1D13D3004079B6 /* UITextView+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A8EABA0A1DF5D64A00E1DBB0 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				A83430911DF05FD000CC4541 /* ContactsTableViewController.swift */,
+				A87624931DFCAC5500AE2E80 /* ContactsClass.swift */,
+				A8EABA151DF5D7DB00E1DBB0 /* ContactTableViewCell.swift */,
+				A8EABA0B1DF5D67900E1DBB0 /* ContactEntry.swift */,
+				A87624951DFEC5E900AE2E80 /* SectionClass.swift */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C771A1B1DB757F9000C9CD6 /* Locnote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C771A471DB757F9000C9CD6 /* Build configuration list for PBXNativeTarget "Locnote" */;
+			buildPhases = (
+				CB919DFF21F5E8064DCB1A9E /* [CP] Check Pods Manifest.lock */,
+				4C771A181DB757F9000C9CD6 /* Sources */,
+				4C771A191DB757F9000C9CD6 /* Frameworks */,
+				4C771A1A1DB757F9000C9CD6 /* Resources */,
+				AC3969044E2D0C6B44EB3797 /* [CP] Embed Pods Frameworks */,
+				B14FD772743DC6130EC53F7F /* [CP] Copy Pods Resources */,
+				A832C5691E26E62700C9555D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locnote;
+			productName = Locnote;
+			productReference = 4C771A1C1DB757F9000C9CD6 /* Locnote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C771A321DB757F9000C9CD6 /* LocnoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C771A4A1DB757F9000C9CD6 /* Build configuration list for PBXNativeTarget "LocnoteTests" */;
+			buildPhases = (
+				F09AED9E8BE0087F1E78ACF7 /* [CP] Check Pods Manifest.lock */,
+				4C771A2F1DB757F9000C9CD6 /* Sources */,
+				4C771A301DB757F9000C9CD6 /* Frameworks */,
+				4C771A311DB757F9000C9CD6 /* Resources */,
+				2AAC2CDB8BF1EBACD9C1F22F /* [CP] Embed Pods Frameworks */,
+				FE25E83B5668CE0A9D627D94 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C771A351DB757F9000C9CD6 /* PBXTargetDependency */,
+			);
+			name = LocnoteTests;
+			productName = LocnoteTests;
+			productReference = 4C771A331DB757F9000C9CD6 /* LocnoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C771A3D1DB757F9000C9CD6 /* LocnoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C771A4D1DB757F9000C9CD6 /* Build configuration list for PBXNativeTarget "LocnoteUITests" */;
+			buildPhases = (
+				21A04068114200A26457D1F2 /* [CP] Check Pods Manifest.lock */,
+				4C771A3A1DB757F9000C9CD6 /* Sources */,
+				4C771A3B1DB757F9000C9CD6 /* Frameworks */,
+				4C771A3C1DB757F9000C9CD6 /* Resources */,
+				A6E956BB3D3B81750BDE8690 /* [CP] Embed Pods Frameworks */,
+				F646EDBEDB55EDAC94414CDD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C771A401DB757F9000C9CD6 /* PBXTargetDependency */,
+			);
+			name = LocnoteUITests;
+			productName = LocnoteUITests;
+			productReference = 4C771A3E1DB757F9000C9CD6 /* LocnoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C771A141DB757F9000C9CD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ruzhin Alexey";
+				TargetAttributes = {
+					4C771A1B1DB757F9000C9CD6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2U8Y47J6F9;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+					4C771A321DB757F9000C9CD6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 297933S5ZJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C771A1B1DB757F9000C9CD6;
+					};
+					4C771A3D1DB757F9000C9CD6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 297933S5ZJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C771A1B1DB757F9000C9CD6;
+					};
+				};
+			};
+			buildConfigurationList = 4C771A171DB757F9000C9CD6 /* Build configuration list for PBXProject "Locnote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C771A131DB757F9000C9CD6;
+			productRefGroup = 4C771A1D1DB757F9000C9CD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C771A1B1DB757F9000C9CD6 /* Locnote */,
+				4C771A321DB757F9000C9CD6 /* LocnoteTests */,
+				4C771A3D1DB757F9000C9CD6 /* LocnoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C771A1A1DB757F9000C9CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8727E241E1ABE84008DAFFC /* LaunchScreen.storyboard in Resources */,
+				A8D3243E1E26EEC800CEF7A4 /* GoogleService-Info.plist in Resources */,
+				4C771A2A1DB757F9000C9CD6 /* Assets.xcassets in Resources */,
+				A8678FC01E3F4D630038915B /* begin_record.mp3 in Resources */,
+				4C771A251DB757F9000C9CD6 /* Main.storyboard in Resources */,
+				A8678FC11E3F4D630038915B /* end_record.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C771A311DB757F9000C9CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D3243F1E26EEC800CEF7A4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C771A3C1DB757F9000C9CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D324401E26EEC800CEF7A4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21A04068114200A26457D1F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2AAC2CDB8BF1EBACD9C1F22F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocnoteTests/Pods-LocnoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6E956BB3D3B81750BDE8690 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocnoteUITests/Pods-LocnoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A832C5691E26E62700C9555D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7da4a81552a0f4a5f9db6165628d32458ce048e3 ad6490e751681048211d39e8e00d3561adab117b914a35aee0949aa3b4c70182";
+		};
+		AC3969044E2D0C6B44EB3797 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Locnote/Pods-Locnote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14FD772743DC6130EC53F7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Locnote/Pods-Locnote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB919DFF21F5E8064DCB1A9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F09AED9E8BE0087F1E78ACF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F646EDBEDB55EDAC94414CDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocnoteUITests/Pods-LocnoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE25E83B5668CE0A9D627D94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocnoteTests/Pods-LocnoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C771A181DB757F9000C9CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8BD28931E2CE867007277E8 /* AuthorizationViewController.swift in Sources */,
+				A8AAABEE1E11135C00C6FFFB /* GeopositionClass.swift in Sources */,
+				A8B77E971E03DB4300715FDF /* PlaceMark.swift in Sources */,
+				A83430921DF05FD000CC4541 /* ContactsTableViewController.swift in Sources */,
+				A82D1C1D1E81877B00EAAFEA /* CellForComplitedNotificationsCollection.swift in Sources */,
+				A8524D8E1DF2F6E3008AFDD1 /* MessageTextViewController.swift in Sources */,
+				A82053401E34BDA900B6154F /* PhotosCollectionViewCell.swift in Sources */,
+				A820533E1E34B68600B6154F /* PhotosCollectionViewModel.swift in Sources */,
+				A8EABA171DF5D7DB00E1DBB0 /* ContactTableViewCell.swift in Sources */,
+				A8F72DCA1E1D13D3004079B6 /* UITextView+Extensions.swift in Sources */,
+				A8BA598D1E3903F00077540E /* AudioMessageTableViewCell.swift in Sources */,
+				4C771A201DB757F9000C9CD6 /* AppDelegate.swift in Sources */,
+				A8C12B781E32AA20004E8CBB /* ContactsTableViewModel.swift in Sources */,
+				A84206AC1E7ADE9900982166 /* LocationManagerSingleton.swift in Sources */,
+				A8EABA101DF5D67900E1DBB0 /* ContactEntry.swift in Sources */,
+				A81AFB521E539AF500C15B5F /* ComplitedNotificationCollectionViewModel.swift in Sources */,
+				A834308B1DF046FB00CC4541 /* SendToContactTableViewController.swift in Sources */,
+				A835B9091E39074A00140FF1 /* AudioMessageTableViewModel.swift in Sources */,
+				A834308D1DF0475C00CC4541 /* SendToMeTableViewController.swift in Sources */,
+				A87624961DFEC5E900AE2E80 /* SectionClass.swift in Sources */,
+				A8EABA111DF5D67900E1DBB0 /* String+Extensions.swift in Sources */,
+				4C771A511DB8E7DC000C9CD6 /* SignInToContinueViewController.swift in Sources */,
+				A81AFB561E53B98700C15B5F /* CurrentCollectionViewCell.swift in Sources */,
+				4C771A281DB757F9000C9CD6 /* Locnote.xcdatamodeld in Sources */,
+				A81AFB501E53826A00C15B5F /* CoreDataCollectionViewModel.swift in Sources */,
+				A8A0B50B1E00690200A2B332 /* GeoPositionViewController.swift in Sources */,
+				A87624941DFCAC5500AE2E80 /* ContactsClass.swift in Sources */,
+				A8B1F11A1DED81F200802CB8 /* MainTableViewController.swift in Sources */,
+				A89D64101DEDA13A0023BAC7 /* SettingsTableViewController.swift in Sources */,
+				A8727E221E1AB7B5008DAFFC /* GreatingViewController.swift in Sources */,
+				A81AFB541E539BB600C15B5F /* CurrentNotificationCollectionViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C771A2F1DB757F9000C9CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C771A381DB757F9000C9CD6 /* LocnoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C771A3A1DB757F9000C9CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C771A431DB757F9000C9CD6 /* LocnoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C771A351DB757F9000C9CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C771A1B1DB757F9000C9CD6 /* Locnote */;
+			targetProxy = 4C771A341DB757F9000C9CD6 /* PBXContainerItemProxy */;
+		};
+		4C771A401DB757F9000C9CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C771A1B1DB757F9000C9CD6 /* Locnote */;
+			targetProxy = 4C771A3F1DB757F9000C9CD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C771A231DB757F9000C9CD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C771A241DB757F9000C9CD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C771A451DB757F9000C9CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C771A461DB757F9000C9CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C771A481DB757F9000C9CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B60B6DD043B63DFEE3FE71F /* Pods-Locnote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2U8Y47J6F9;
+				INFOPLIST_FILE = Locnote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SimpleMobile.Locnote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Locnote/Locnote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C771A491DB757F9000C9CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5620C9904952D4D3D3891B95 /* Pods-Locnote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2U8Y47J6F9;
+				INFOPLIST_FILE = Locnote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SimpleMobile.Locnote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Locnote/Locnote-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4C771A4B1DB757F9000C9CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083BC23C517D770575FA8672 /* Pods-LocnoteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 297933S5ZJ;
+				INFOPLIST_FILE = LocnoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SimpleMobile.LocnoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locnote.app/Locnote";
+			};
+			name = Debug;
+		};
+		4C771A4C1DB757F9000C9CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAED07733E109F0CCF8517A /* Pods-LocnoteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 297933S5ZJ;
+				INFOPLIST_FILE = LocnoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SimpleMobile.LocnoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locnote.app/Locnote";
+			};
+			name = Release;
+		};
+		4C771A4E1DB757F9000C9CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733FF855FB486F1E050D5B1A /* Pods-LocnoteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 297933S5ZJ;
+				INFOPLIST_FILE = LocnoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SimpleMobile.LocnoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Locnote;
+			};
+			name = Debug;
+		};
+		4C771A4F1DB757F9000C9CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FC138BB347398671F00BCE0 /* Pods-LocnoteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 297933S5ZJ;
+				INFOPLIST_FILE = LocnoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SimpleMobile.LocnoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Locnote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C771A171DB757F9000C9CD6 /* Build configuration list for PBXProject "Locnote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C771A451DB757F9000C9CD6 /* Debug */,
+				4C771A461DB757F9000C9CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C771A471DB757F9000C9CD6 /* Build configuration list for PBXNativeTarget "Locnote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C771A481DB757F9000C9CD6 /* Debug */,
+				4C771A491DB757F9000C9CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C771A4A1DB757F9000C9CD6 /* Build configuration list for PBXNativeTarget "LocnoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C771A4B1DB757F9000C9CD6 /* Debug */,
+				4C771A4C1DB757F9000C9CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C771A4D1DB757F9000C9CD6 /* Build configuration list for PBXNativeTarget "LocnoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C771A4E1DB757F9000C9CD6 /* Debug */,
+				4C771A4F1DB757F9000C9CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C771A261DB757F9000C9CD6 /* Locnote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C771A271DB757F9000C9CD6 /* Locnote.xcdatamodel */,
+			);
+			currentVersion = 4C771A271DB757F9000C9CD6 /* Locnote.xcdatamodel */;
+			path = Locnote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C771A141DB757F9000C9CD6 /* Project object */;
+}

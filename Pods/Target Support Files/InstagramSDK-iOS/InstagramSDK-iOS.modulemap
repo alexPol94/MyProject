@@ -1,0 +1,6 @@
+framework module InstagramSDK_iOS {
+  umbrella header "InstagramSDK-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

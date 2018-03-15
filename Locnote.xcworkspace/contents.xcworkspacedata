@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "CoreDataModels">
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Message+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Message+CoreDataProperties.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Photo+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Photo+CoreDataProperties.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/PlaceCoordinate+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/PlaceCoordinate+CoreDataProperties.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Notification+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Notification+CoreDataProperties.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/AudioMessage+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/AudioMessage+CoreDataProperties.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Contact+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/Contact+CoreDataProperties.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/SendToContactNote+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/SendToContactNote+CoreDataProperties.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/SendToMeNote+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Locnote/CoreDataModels/SendToMeNote+CoreDataProperties.swift">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Locnote.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

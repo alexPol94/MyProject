@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AudioMessage" representedClassName="AudioMessage" syncable="YES" codeGenerationType="class">
+        <attribute name="audio" attributeType="Binary" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SendToMeNote" inverseName="audioMessages" inverseEntity="SendToMeNote" syncable="YES"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="sendToContactNote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SendToContactNote" inverseName="contact" inverseEntity="SendToContactNote" syncable="YES"/>
+        <relationship name="sendToMeNote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SendToMeNote" inverseName="contacts" inverseEntity="SendToMeNote" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES" codeGenerationType="class">
+        <attribute name="attributedText" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notification" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Notification" inverseName="message" inverseEntity="Notification" syncable="YES"/>
+    </entity>
+    <entity name="Notification" representedClassName="Notification" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="complitionDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFinished" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Message" inverseName="notification" inverseEntity="Message" syncable="YES"/>
+        <relationship name="placeLocation" maxCount="1" deletionRule="Cascade" destinationEntity="PlaceCoordinate" inverseName="notification" inverseEntity="PlaceCoordinate" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES" codeGenerationType="class">
+        <attribute name="imageData" attributeType="Binary" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SendToMeNote" inverseName="photos" inverseEntity="SendToMeNote" syncable="YES"/>
+    </entity>
+    <entity name="PlaceCoordinate" representedClassName="PlaceCoordinate" syncable="YES" codeGenerationType="class">
+        <attribute name="isArrive" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="radius" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notification" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Notification" inverseName="placeLocation" inverseEntity="Notification" syncable="YES"/>
+    </entity>
+    <entity name="SendToContactNote" representedClassName="SendToContactNote" parentEntity="Notification" syncable="YES" codeGenerationType="class">
+        <relationship name="contact" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="sendToContactNote" inverseEntity="Contact" syncable="YES"/>
+    </entity>
+    <entity name="SendToMeNote" representedClassName="SendToMeNote" parentEntity="Notification" syncable="YES" codeGenerationType="class">
+        <relationship name="audioMessages" optional="YES" toMany="YES" maxCount="3" deletionRule="Cascade" destinationEntity="AudioMessage" inverseName="note" inverseEntity="AudioMessage" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" maxCount="3" deletionRule="Cascade" destinationEntity="Contact" inverseName="sendToMeNote" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" maxCount="3" deletionRule="Cascade" destinationEntity="Photo" inverseName="note" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AudioMessage" positionX="189" positionY="102" width="128" height="75"/>
+        <element name="Contact" positionX="-324" positionY="54" width="128" height="150"/>
+        <element name="Message" positionX="-450" positionY="-259" width="126" height="90"/>
+        <element name="Notification" positionX="-171" positionY="-259" width="128" height="135"/>
+        <element name="Photo" positionX="-65" positionY="99" width="128" height="75"/>
+        <element name="PlaceCoordinate" positionX="72" positionY="-261" width="128" height="150"/>
+        <element name="SendToContactNote" positionX="-326" positionY="-63" width="128" height="60"/>
+        <element name="SendToMeNote" positionX="-29" positionY="-85" width="128" height="90"/>
+    </elements>
+</model>

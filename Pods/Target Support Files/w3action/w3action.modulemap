@@ -1,0 +1,6 @@
+framework module w3action {
+  umbrella header "w3action-umbrella.h"
+
+  export *
+  module * { export * }
+}

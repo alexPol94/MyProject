@@ -1,0 +1,6 @@
+framework module apxml {
+  umbrella header "apxml-umbrella.h"
+
+  export *
+  module * { export * }
+}
